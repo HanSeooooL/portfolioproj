@@ -27,6 +27,7 @@ export default function Layout({ children }) {
                     width: 100vw;
                     height: 100vh;
                     background: gray;
+                    padding: 0px;
                 }
                 
                 .NaviArea {
