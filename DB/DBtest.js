@@ -1,14 +1,17 @@
-const SQL = require('./DB')
+const { insertProject, deleteProject } = require("./DB")
 
-const req = {
-    id: 2
+let data = {
+    title:'테스트',
+    description:'테스트 설명',
+    start:'2024-01-15',
+    finish:'2024-01-15',
+    link:'Link'
 }
-const test = async () => {
-    const results = await SQL.selectTest(req);
-    console.log(results[0].name)
+
+function printAll(data) {
+    for (dat in data) {
+        console.log(data[dat])
+    }
 }
 
-test();
-
-
-const reuslts = SQL.selectTest.then()
+deleteProject('1')

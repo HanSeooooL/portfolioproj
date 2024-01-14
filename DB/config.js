@@ -1,5 +1,5 @@
 const mysql = require('mysql2/promise')
-require('dotenv').config({path:'../config/.env.DB'});
+require('dotenv').config({path:'config/.env.DB'});
 const logger = require('winston')
 
 const TAG_SUCCESS = 'Create Pool Success!';
