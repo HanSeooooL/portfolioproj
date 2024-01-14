@@ -9,3 +9,6 @@ const test = async () => {
 }
 
 test();
+
+
+const reuslts = SQL.selectTest.then()

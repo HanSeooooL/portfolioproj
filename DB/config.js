@@ -6,6 +6,7 @@ const TAG_SUCCESS = 'Create Pool Success!';
 const TAG_PROTOCOL_CONNECTION_LOST = 'Database connection was closed.';
 const TAG_ER_CON_COUNT_ERROR = 'Database has too many connections.';
 const TAG_ECONNREFUSED = 'Database connection was refused.';
+
 const pool = mysql.createPool({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
