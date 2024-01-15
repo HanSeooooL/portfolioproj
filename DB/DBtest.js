@@ -1,17 +1,5 @@
-const { insertProject, deleteProject } = require("./DB")
+const { insertProject, deleteProject, updateProject, selectProject } = require("./DB")
 
-let data = {
-    title:'테스트',
-    description:'테스트 설명',
-    start:'2024-01-15',
-    finish:'2024-01-15',
-    link:'Link'
-}
-
-function printAll(data) {
-    for (dat in data) {
-        console.log(data[dat])
-    }
-}
-
-deleteProject('1')
+//insertProject({title: '테스트', description: '테스트입니다.', start: '2024-01-15', finish: '2024-01-15', link: 'Link'})
+//updateProject({title: '수정테스트', description: '수정테스트입니다.'}, {title: '테스트'})
+//res = selectProject()
